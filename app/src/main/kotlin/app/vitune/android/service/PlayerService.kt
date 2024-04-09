@@ -93,6 +93,7 @@ import app.vitune.android.utils.forceSeekToPrevious
 import app.vitune.android.utils.intent
 import app.vitune.android.utils.mediaItems
 import app.vitune.android.utils.progress
+import app.vitune.android.utils.setPlaybackPitch
 import app.vitune.android.utils.shouldBePlaying
 import app.vitune.android.utils.thumbnail
 import app.vitune.android.utils.timer
@@ -364,6 +365,11 @@ class PlayerService : InvincibleService(), Player.Listener, PlaybackStatsListene
             subscribe(PlayerPreferences.speedProperty.stateFlow) {
                 {
                     player.setPlaybackSpeed(it.coerceAtLeast(0.01f))
+                }
+            }
+            subscribe(PlayerPreferences.pitchProperty.stateFlow) {
+                {
+                    player.setPlaybackPitch(it.coerceAtLeast(0.01f))
                 }
             }
             subscribe(PlayerPreferences.isInvincibilityEnabledProperty.stateFlow) {

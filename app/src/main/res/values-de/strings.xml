@@ -12,7 +12,7 @@
     <string name="format_top_playlist">Top %1$s</string>
     <string name="format_my_top_playlist">Meine Top %1$s</string>
     <string name="format_view_top_of_header">Top %1$s…</string>
-    <string name="format_speed_multiplier">%1$sx</string>
+    <string name="format_multiplier">%1$sx</string>
 
     <string name="past_24_hours">24 Stunden</string>
     <string name="past_week">1 Woche</string>
