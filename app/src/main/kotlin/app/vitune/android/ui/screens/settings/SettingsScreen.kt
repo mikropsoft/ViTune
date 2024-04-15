@@ -61,7 +61,7 @@ fun SettingsScreen() {
 
     val (tabIndex, onTabChanged) = rememberSaveable { mutableIntStateOf(0) }
 
-    RouteHandler(listenToGlobalEmitter = true) {
+    RouteHandler {
         GlobalRoutes()
 
         NavHost {

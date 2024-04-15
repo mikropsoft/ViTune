@@ -31,8 +31,8 @@ kotlin_datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version =
 kotlin_immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version = "0.3.7" }
 
 compose_bom = { module = "androidx.compose:compose-bom", version = "2024.04.00" }
-compose_animation = { module = "androidx.compose.animation:animation" }
-compose_foundation = { module = "androidx.compose.foundation:foundation", version = "1.6.5" }
+compose_animation = { module = "androidx.compose.animation:animation", version = "1.7.0-alpha06" }
+compose_foundation = { module = "androidx.compose.foundation:foundation" }
 compose_ui = { module = "androidx.compose.ui:ui" }
 compose_ui_util = { module = "androidx.compose.ui:ui-util" }
 compose_ui_fonts = { module = "androidx.compose.ui:ui-text-google-fonts" }
